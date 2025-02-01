@@ -1,0 +1,105 @@
+<%- include ("./partials/header.ejs") %>
+<main>
+    <div class="content other">
+        <div class="content-div">
+            <h1 class="head-class">TYPE <%= title.toUpperCase() %></h1>
+            <p>
+                <%= content.intro %>
+            </p>
+        </div>
+
+        <div class="content-div">
+            <h2><b>Le type <%= title.toUpperCase() %></b></h2>
+            <p>
+                <%= content.present %>
+            </p>
+        </div>
+
+        <div class="content-div">
+            <h2><b>AUTRES INFORMATIONS</b></h2>
+            <h3><b>Types d'activités préférées</b></h3>
+            <p>
+                <%= content.activities %>
+            </p>
+
+            <h3><b>Caractéristiques des individus de ce type</b></h3>
+            <p>
+                <%= content.characteristics %>
+            </p>
+
+            <h3><b>Univers de travail</b></h3>
+            <p>
+                <%= content.universe %>
+            </p>
+        </div>
+
+        <div class="content-div">
+            <h2><b>DESCRIPTION G&Eacute;N&Eacute;RALE</b></h2>
+            <p>
+                <%= content.introDescribe %>
+            </p>
+
+            <h3><b>Valeurs/objectifs</b></h3>
+            <p>
+                <%= content.values %>
+            </p>
+
+            <h3><b>Vision du monde</b></h3>
+            <p>
+                <%= content.visionOfWorld %>
+            </p>
+        </div>
+
+        <div class="content-div">
+            <h2><b>L'INDIVIDU</b></h2>
+            <h3><b>Contributions et apports</b></h3>
+            <p>
+                <%= content.contribution %>
+            </p>
+
+            <h3><b>besoin en formation</b></h3>
+            <p>
+                <%= content.improve %>
+            </p>
+
+            <h3><b>Risques possibles</b></h3>
+            <p>
+                <%= content.risks %>
+            </p>
+        </div>
+
+        <div class="content-div">
+            <h2><b>AU SEIN DE L'ORGANISATION</b></h2>
+            <h3><b>La façon dont elles dirigent les autres - <%= content.theyLead[0] %></b></h3>
+            <p>
+                <%= content.theyLead[1] %>
+            </p>
+
+            <h3><b>Comment les diriger - <%= content.leadThem[0] %> </b></h3>
+            <p>
+                <%= content.leadThem[1] %>
+            </p>
+
+            <h3><b>Délégation - <%= content.delegation[0] %></b></h3>
+            <p>
+                <%= content.delegation[1] %>
+            </p>
+
+            <h3><b>Leurs relations avec leurs collègues et leurs pairs - <%= content.relationships[0] %></b></h3>
+            <p>
+                <%= content.relationships[1] %>
+            </p>
+        </div>
+        <hr>
+        <div class="content-div">
+            <h2>Explorer les autres types</h2>
+            <div style="display: grid; grid-template-columns: repeat(5,1fr);">
+                <% for( item of list ){ if( item != style[1] ) { %>
+                    <a href="/riasec/<%= item %>"><%= item %></a>
+                <% } } %>
+            </div>
+            
+        </div>
+    </div>
+</main>
+<%- include ("./partials/footer.ejs") %>

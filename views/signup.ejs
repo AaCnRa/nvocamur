@@ -1,0 +1,33 @@
+<%- include ("./partials/header.ejs") %>
+<main>
+    <div class="content auth-container">
+        <h1 class="head-login">Inscription</h1>
+        <form id="signup-form">
+            <div>
+                <div>
+                    <label for="name">Nom*</label><br><input type="text" name="name" id="name" placeholder="Nom" required><br>
+                </div>
+                <div>
+                    <label for="firstname">Prénom</label><br><input type="text" name="firstname" id="firstname" placeholder="Votre(Vos) prénom(s)"><br>
+                </div>
+                <div>
+                    <label for="username">Nom d'utilisateur*</label><br>
+                    <input type="text" id="username" placeholder="Nom d'utilisateur" pattern="[a-zA-Z0-9._]+" required>
+                    <br><bdi class="note">Votre nom d'utilisateur ne peut contenir que des caractères A à Z, a à z, 0 à 9, '.' et '_'</bdi><br>
+                </div>
+                <div>
+                    <label for="password">Mot de passe*</label><br><input type="password" id="password" placeholder="Mot de passe" class="password" minlength="8" required><br><bdi class="note">Votre mot de passe doit contenir 8 caractères au minimum.</bdi><br>
+                </div>
+                <div>
+                    <label for="pwcheck">Mot de passe (vérification)*</label><br><input type="password" name="pwcheck" id="pwcheck" placeholder="Le même mot de passe que ci-dessus" class="password" required><bdi class="note">Recopiez le même mot de passe.</bdi><br>
+                </div>
+            </div>
+            
+            <div>
+                <button type="reset">Annuler</button>
+                <button type="submit">Soumettre</button>
+            </div>
+        </form>
+    </div>
+</main>
+<%- include ("./partials/footer.ejs") %>

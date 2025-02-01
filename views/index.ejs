@@ -1,0 +1,75 @@
+<%- include ("./partials/header.ejs") %>
+<main>
+    
+    <div class="content other">
+        <h1 class="head-class">VOCAMVR: &OpenCurlyDoubleQuote; Quel est mon appel? &CloseCurlyDoubleQuote;</h1>
+        <details class="quotation">
+            <summary>Exode 31:2-6 J.N.D &lpar;cliquez pour d&eacute;rouler&rpar;</summary>
+            &laquo;
+            <ol type="1" start="2">
+                <li>Regarde, j'ai appelé par nom Betsaleël, fils d'Uri, fils de Hur, de la tribu de Juda;</li>
+                <li>et je l'ai rempli de l'esprit de <bdi style="font-variant-caps: small-caps;">Dieu</bdi>, en sagesse, et en intelligence, et pour toutes sortes d'ouvrages,</li>
+                <li>pour faire des inventions : pour travailler en or, et en argent, et en airain;</li>
+                <li>pour tailler les pierres à enchâsser, et pour tailler le bois, afin d'exécuter toutes sortes d'ouvrages.</li>
+                <li>Et voici, j'ai donné avec lui Oholiab, fils d'Akhisamac, de la tribu de Dan; et j'ai mis de la sagesse dans le cœur de tout homme intelligent, afin qu'ils fassent tout ce que je t'ai commandé.</li>
+            </ol>
+            &raquo;
+        </details>
+        <div class="content-div present">
+            <p>
+                <b><acronym title="(lt, «Nous sommes appelés»)">VOCAMVR</acronym></b> a pour objectif de vous assister dans votre quête en vous proposant une approche pour l'orientation qui est largement reconnu dans le monde:
+                le modèle <b><a href="/riasec"><acronym title="Réaliste, Investigateur, Artiste, Social, Entreprenant, Conventionnel">RIASEC</acronym></a></b>.
+            </p>
+            <p>
+                Notre travail vise à vous guider dans votre introspection en vous aidant à connaître vos intérêts, vos points forts, vos préférences dans plusieurs domaines.
+            </p>
+        </div>
+        <hr>
+        <div class="content-div">
+            <h2>Utilitaires du site</h2>
+            <div id="utils" style="display: grid; grid-template-columns: 1fr 1fr 1fr;">
+                <div class="display" onclick="window.location.assign('/#profile')">
+                    <img src="/public/img/user-profile.png" alt="image">
+                    <h3>Un profil personnel</h3>
+                    <p>Une page pour une visualisation élaborée de votre profil.</p>
+                </div>
+                <div class="display" onclick="window.location.assign('/quiz')">
+                    <img src="/public/img/checklist.avif" alt="image">
+                    <h3>Un utilitaire de test</h3>
+                    <p>Un quiz d'orientation suivant le modèle RIASEC.</p>
+                </div>
+                <div class="display" onclick="window.location.assign('/#macarriere')"">
+                    <img src="/public/img/compass.png" alt="image">
+                    <h3>Des carrières</h3>
+                    <p>Une compilation de carrières qui vous sont recommandés.</p>
+                </div>
+                <div class="display" onclick="window.location.assign('/riasec')" style="display: none;">
+                    <img src="/public/img/light" alt="image will be here">
+                    <h3>Lumière sur chaque type du modèle RIASEC</h3>
+                    <p>Vous serez mené dans une étude détaillée de chaque lettre du code RIASEC.</p>
+                </div>
+                <div class="display" onclick="window.location.assign('/profession')" style="display: none;">
+                    <img src="/public/img/Contenu-du-registre-de-securite.webp" alt="image will be here">
+                    <h3>Un registre de professions et métiers</h3>
+                    <p>Vous pourrez naviguer dans la liste des métiers ou domaines avec les profils associés.</p>
+                </div>
+            </div>
+            <button id="testing" style="width: 100%;">Test</button>
+        </div>
+        <hr>
+        <!--        <div class="content-div">
+            <h2>Des ressources</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                <div class="display">
+                    <h3><a href="/riasec">Lumière sur chaque type du modèle RIASEC</a></h3>
+                    <p>Vous serez mené dans une étude détaillée de chaque lettre du code RIASEC.</p>
+                </div>
+                <div class="display">
+                    <h3><a href="/profession">Un registre de professions et métiers</a></h3>
+                    <p>Vous pourrez naviguer dans la liste des métiers ou domaines avec les profils associés.</p>
+                </div>
+            </div>
+        </div>-->
+    </div>
+</main>
+<%- include ("./partials/footer.ejs") %>

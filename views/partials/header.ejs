@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
+    <title> VOCAMVR - <%= title %></title>
+    <% for(sc of script){ %>
+        <script src="/public/script/<%= sc %>.js"></script>
+    <% }%>
+    <% for(st of style){ %>
+        <link rel="stylesheet" href="/public/style/<%= st %>.css">
+    <% } %>
+
+</head>
+<body>
+    <header class="show">
+        <div><h1><a href="/">VOCAMVR</a></h1></div>
+        <nav>
+            <div>
+                <!--<div class="link">
+                    <a href="/">VOCAMVR</a>
+                </div>-->
+                <div class="link">
+                    <a href="/riasec">Le modèle</a>
+                </div>
+                <div class="link">
+                    <a href="/quiz">Faire un quiz</a>
+                </div>
+                <div class="link">
+                    <a href="/login">Se connecter</a>
+                </div>
+            </div>
+        </nav>
+        <div class="nous"><a href="/nous"><img src="/public/icons/information.png"></a></div>
+        
+    </header>
+    

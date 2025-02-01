@@ -1,0 +1,83 @@
+<%- include ("./partials/header.ejs") %>
+<main>
+    <div class="content other">
+        <div class="content-div">
+            <h1 class="head-class"><b>Le modèle RIASEC</b></h1>
+            <p>
+                Le <b>modèle RIASEC</b> ou <b>code Holland</b>, mis au point par le psychologue John HOLLAND, est une théorie sur
+                les carrières et choix vocationnels qui s'appuie sur <b>6 types de personnes au travail</b> : <br>
+            </p>
+
+            <p style="text-align: center;">« <b>R</b>éaliste », « <b>I</b>nvestigateur », « <b>A</b>rtistique », « <b>S</b>ocial », « <b>E</b>ntreprenant », « <b>C</b>onventionnel ».</p>
+
+            <p>
+                Selon HOLLAND, les personnes d’un même « type » exercent souvent le même genre de travail, parce qu’ils
+                s’apparentent par leur personnalité, parce qu’ils poursuivent des objectifs semblables, parce qu’ils
+                présentent les mêmes dispositions physiques et psychologiques à l’égard de leur travail.
+                La typologie d’une personne est établie en mesurant son degré d’affinité avec chacun des 6 types de
+                manière à la classer en ordre d’importance, du type le plus marqué au type le moins marqué.
+            </p>
+            <p>
+                <b>Chez la plupart des gens, ce sont surtout les deux ou trois premiers types de leur hiérarchie personnelle
+                    qui ont une influence significative sur leur manière d’être et d’agir, tant dans leur vie personnelle que
+                    professionnelle.</b>
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="content-div">
+            <h1 class="head-class"><b>Description</b></h1>
+            <p>
+                L'acronyme <acronym title="Realistic, Investigative, Artistic, Social, Enterprising, Conventional">RIASEC</acronym> sert à rappeler les types suivants:
+            </p>
+            
+            <dl style="list-style: none;">
+                <li class="realistic">
+                    <a href="/riasec/realiste"><b>Réaliste  »</b></a><br>
+                    Il est débrouillard et pragmatique. Le réaliste aime le concret, le terrain.
+                </li>
+                <li class="investigative »">
+                    <a href="/riasec/investigateur"><b>Investigateur »</b></a><br>
+                    C’est un intellectuel, il est curieux et analytique. L’investigateur aime résoudre des
+                    problèmes, a besoin de comprendre. Il est à l’aise avec les connaissances théoriques.
+                </li>
+                <li class="artistic">
+                    <a href="/riasec/artiste"><b>Artiste »</b></a><br>
+                    Il agit par rapport à ce qu’il ressent, il a de l’intuition. L’artiste aime créer, est non
+                    conformiste. Il a besoin d’un environnement de travail différent et apprend par l’expérimentation.
+                </li>
+                <li class="social">
+                    <a href="/riasec/social"><b>Social »</b></a><br>
+                    Il est bienveillant, chaleureux. Il aime les relations et a besoin de communiquer, d’enseigner,
+                    d’aider. Le social aime apprendre par le travail d’équipe et la collaboration.
+                </li>
+                <li class="enterprising">
+                    <a href="/riasec/entreprenant"><b>Entreprenant »</b></a><br>
+                    Il est ambitieux, convaincant. Il aime diriger, vendre, motiver. Il est à l’aise dans un
+                    environnement compétitif et apprend en situation.
+                </li>
+                <li class="conventional">
+                    <a href="/riasec/conventionnel"><b>Conventionnel »</b></a><br>
+                    Il est ordonné, méticuleux. Il est structuré, procédurier, aime le travail de bureau. Le
+                    conventionnel a besoin de consignes et de méthodes pour apprendre.
+                </li>
+            </dl>
+        </div>
+
+        <hr>
+        
+        <div class="content-div">
+            <h1 class="head-class">Quel est votre type?</h1>
+            <p>
+                Vous voulez connaître votre type? Faites le test de HOLLAND proposé et pour déterminer votre code RIASEC.
+            </p>
+            <dl style="list-style: none;">
+                <li class="test" onclick="window.location.assign('/quiz')">
+                    Passer le test
+                </li>
+            </dl>
+        </div>
+    </div>
+</main>
+<%- include ("./partials/footer.ejs") %>

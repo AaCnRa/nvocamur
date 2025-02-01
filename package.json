@@ -1,0 +1,23 @@
+{
+  "name": "vocamur",
+  "version": "1.0.0",
+  "description": "Projet d'orientation professionnelle utilisant le modèle RIASEC",
+  "keywords": [
+    "riasec"
+  ],
+  "license": "ISC",
+  "author": "Coriolan R. Andriamiharinjara",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

@@ -1,0 +1,34 @@
+document.addEventListener("DOMContentLoaded",function(){
+    const locations = {
+        0:{
+            link:"/riasec/realiste",
+            div:document.getElementsByClassName("realistic")[0]
+        },
+        1:{
+            link:"/riasec/investigateur",
+            div:document.getElementsByClassName("investigative")[0]
+        },
+        2:{
+            link:"/riasec/artiste",
+            div:document.getElementsByClassName("artistic")[0]
+        },
+        3:{
+            link:"/riasec/social",
+            div:document.getElementsByClassName("social")[0]
+        },
+        4:{
+            link:"/riasec/entreprenant",
+            div:document.getElementsByClassName("enterprising")[0]
+        },
+        5:{
+            link:"/riasec/conventionnel",
+            div:document.getElementsByClassName("conventional")[0]
+        },
+    }
+    //console.log(locations);
+    for(let i=0;i<Object.keys(locations).length;i++){
+        locations[i]["div"].addEventListener("click",function(){
+            window.location.assign(locations[i].link);
+        })
+    }
+})
